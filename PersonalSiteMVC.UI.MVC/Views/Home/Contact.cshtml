@@ -1,17 +1,89 @@
-﻿@{
+﻿@model PersonalSiteMVC.UI.MVC.Models.ContactViewModel
+
+@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<h2>@ViewBag.Title</h2>
+<div class="content-wrap">
+    <div class="mccan page">
+        <h3 class="title-small">Employment</h3>
+        <h2 class="title">Contact Me</h2>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>If you’d like to talk about a project or potential employment you can contact me using any of the following or using the contact form below.</p>
+                    <div class="list">
+                        <ul>
+                            <li><strong>Phone :</strong> +1 (913) 905-9232</li>
+                            <li><strong>Email :</strong> mikeredifer@yahoo.com</li>
+                            <li><strong>Location :</strong> Olathe, Kanasas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="divider1"></div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h6 class="title-small"><strong>Contact</strong></h6>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <fieldset>
+                                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Name" } })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <fieldset>
+                                    @*<input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required="">*@
+                                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email" } })
+                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <fieldset>
+                                    @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control", @placeholder = "Subject" } })
+                                    @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <fieldset>
+                                    @*<textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>*@
+                                    @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", @placeholder = "Message" } })
+                                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <input name="submit" type="submit" value="Send">
+                            </div>
+                        </div>
+                        <!-- Copyright -->
+                        <div class="copyright">
+                            <p>&copy; @DateTime.Now.Year <a href="@Url.Action("Index", "Home")">Michael Redifer</a>. All Rights Reserved.</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+    <script>
+    $(function () {
+        $('nav li').filter(function () {
+            return this.href === location.href;
+        }).addClass('current-menu-item');
+    });
+    </script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

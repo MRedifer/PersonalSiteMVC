@@ -1,42 +1,93 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang="en" class="no-js">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title>Redifer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="~/Content/images/favicon.png">
+    <link rel="stylesheet" href="~/Content/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/assets/css/et-lineicons.css">
+    <link rel="stylesheet" href="~/Content/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="~/Content/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/assets/css/style.css">
+    <link rel="stylesheet" href="~/Content/assets/css/style-animations.css">
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+<body class="cv has-additional-menu-content">
+    <header id="identity">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html" class="logo-link" rel="home"> <img src="~/Content/images/logo.png" class="logo" alt=""> </a>
+        </div>
+    </header>
+    <!-- Menu -->
+    <div id="site-menu">
+        <nav class="nav-menu">
+            <ul>
+                <li class="menu-item"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li class="menu-item"><a href="@Url.Action("Resume", "Home")">Resume</a></li>
+                <li class="menu-item"><a href="@Url.Action("Portfolio", "Home")">Portfolio</a></li>
+                <li class="menu-item"><a href="@Url.Action("Classmates", "Home")">Classmates</a></li>
+                <li class="menu-item"><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu-overlay"></div>
+    <div class="site-menu-toggle">
+        <a href="about.html#site-menu" class="ti"> <span class="screen-reader-text">Toggle navigation</span> </a>
+    </div>
+    <!-- Social Media -->
+
+    <!-- Media -->
+    <div class="hero-media">
+        <div class="owl-carousel" data-expand-duration="800">
+            <div class="item owl-lazy" data-src="/Content/images/CuffGrayscale.jpg"></div>
+        </div> <span class="overlay"></span> <span class="ti ti-spin ti-loading"></span>
+    </div>
+    <!-- Content -->
+    @RenderBody()
+    <!-- Hidden Menu -->
+    <div class="additional-menu-content">
+        <h3 class="title-small">More than just a web dev</h3>
+        <h2 class="title">Michael Redifer</h2> <img src="/Content/images/Headshot.png" alt="">
+        <p>Hi, My name is Michael Redifer. I am a Full Stack Web Developer, but I have many other hobbies and things that interest me. Can't be all business all the time. Here are a few of the other things I enjoy.</p> <a href="#" class="btn">Hire Me</a>
+        <div class="divider2"></div>
+        <h3 class="title-small"></h3>
+        <h2 class="title">Instagram</h2>
+        <div class="sb-widget fl-wrap">
+            <div class="insta-thumb">
+                <a href="#"><img src="~/Content/images/insta/01.jpg" alt=""></a>
+                <a href="#"><img src="~/Content/images/insta/02.jpg" alt=""></a>
+                <a href="#"><img src="~/Content/images/insta/03.jpg" alt=""></a>
+                <a href="#"><img src="~/Content/images/insta/04.jpg" alt=""></a>
+                <a href="#"><img src="~/Content/images/insta/05.jpg" alt=""></a>
+                <a href="#"><img src="~/Content/images/insta/06.jpg" alt=""></a>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    <!-- My Info -->
+    <div class="my-info">
+        <div class="box">
+            <div class="field field-my-info field-separator">
+                <h6>Location</h6>
+                <p>Olathe, Kansas</p>
+            </div>
+            <div class="field field-my-info field-separator">
+                <h6>E-Mail</h6>
+                <p>mikeredifer@yahoo.com</p>
+            </div>
+            <div class="field field-my-info field-separator">
+                <h6>Phone</h6>
+                <p>+1 (913) 905-9232</p>
+            </div>
+            <div class="clear"></div>
+            <button type="submit" class="button-color"><span class="ti-download"></span> DOWNLOAD RESUME</button>
+        </div>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <!-- Js -->
+    <script src="~/Content/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/assets/js/modernizr-custom.js"></script>
+    <script src="~/Content/assets/js/owl-carousel.min.js"></script>
+    <script src="~/Content/assets/js/functions.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
