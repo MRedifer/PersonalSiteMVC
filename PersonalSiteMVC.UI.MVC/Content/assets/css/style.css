@@ -329,7 +329,7 @@ object {
 
 a,
 a:hover {
-    color: #F68338;
+    color: red;
 }
 
 a {
@@ -394,7 +394,7 @@ textarea {
 input:focus,
 textarea:focus {
     border-bottom-width: 1px;
-    border-color: #F68338;
+    border-color: red;
 }
 input[type="submit"],
 input[type="reset"],
@@ -406,7 +406,7 @@ button {
     line-height: 1.75em;
     -webkit-transition: background-color .15s ease-out;
     transition: background-color .15s ease-out;
-    background: #F68338;
+    background: red;
     border: 1px solid transparent;
 }
 input[type="submit"]:hover,
@@ -438,7 +438,7 @@ input[type="checkbox"] {
 }
 /* submit and alert success  */
 input[type="submit"] {
-    background: #F68338;
+    background: red;
     color: #fff;
     padding: 8px 20px;
     margin: 0;
@@ -447,7 +447,7 @@ input[type="submit"] {
 .alert-success {
     background: transparent;
     color: #888;
-    border: 1px solid #F68338;
+    border: 1px solid red;
     border-radius: 0px;
 }
 /* placeholder */
@@ -471,7 +471,7 @@ input[type="submit"] {
 .btn {
     padding: 8px 20px;
     cursor: pointer;
-    background: #F68338;
+    background: red;
     -webkit-appearance: none;
     position: relative;
     color: #fff;
@@ -479,7 +479,7 @@ input[type="submit"] {
     font-weight: 400;
     display: inline-block;
     border-radius: 0;
-    border: 1px solid #F68338;
+    border: 1px solid red;
 }
 
 .btn:hover {
@@ -1141,7 +1141,7 @@ input[type="submit"] {
     .hero-media .owl-carousel .owl-expand a:hover,
     .hero-media .owl-carousel .owl-nav a:focus,
     .hero-media .owl-carousel .owl-expand a:focus {
-        color: #F68338;
+        color: red;
     }
 }
 
@@ -1748,7 +1748,7 @@ input[type="submit"] {
     height: 40px;
     line-height: 40px;
     color: #fff;
-    background-color: #F68338;
+    background-color: red;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
@@ -1764,12 +1764,12 @@ input[type="submit"] {
 
 @media (min-width: 992px) {
     .site-menu-toggle a {
-        background-color: #F68338;
+        background-color: red;
     }
 
     .expanded-hero .site-menu-toggle a,
     .fullpage .site-menu-toggle a {
-        background-color: #F68338;
+        background-color: red;
     }
 }
 
@@ -1781,7 +1781,7 @@ input[type="submit"] {
 .site-menu-toggle a:focus,
 .mobile-menu-opened .site-menu-toggle a:hover,
 .mobile-menu-opened .site-menu-toggle a:focus {
-    background-color: #F68338;
+    background-color: red;
     color: #fff;
 }
 
@@ -1796,7 +1796,7 @@ input[type="submit"] {
 }
 
 .mobile-menu-opened .site-menu-toggle a {
-    background-color: #F68338;
+    background-color: red;
     color: #fff;
     color: inherit;
 }
@@ -1848,7 +1848,7 @@ input[type="submit"] {
 }
 
 .nav-menu .current-menu-item > a {
-    color: #F68338;
+    color: red;
 }
 
 @media (max-width: 1199px) {
@@ -1933,14 +1933,14 @@ input[type="submit"] {
         content: "\e64b";
         font-family: 'Themify';
         font-size: 10px;
-        color: #F68338;
+        color: red;
     }
 
     .nav-menu .menu-item-has-children.collapse > .menu-expand:before {
         content: "\e648";
         font-family: 'Themify';
         font-size: 10px;
-        color: #F68338;
+        color: red;
     }
 
     .nav-menu .menu-item-has-children ul {
@@ -2086,19 +2086,19 @@ input[type="submit"] {
     .nav-menu > ul > li.hover > a:after,
     .nav-menu > ul > li > a:focus:after {
         bottom: 6px;
-        background-color: #F68338;
+        background-color: red;
     }
 
     .light-hero-colors .nav-menu > ul > li > a:hover:after,
     .light-hero-colors .nav-menu > ul > li.hover > a:after,
     .light-hero-colors .nav-menu > ul > li > a:focus:after {
-        background-color: #F68338;
+        background-color: red;
     }
 
     #site-menu .nav-menu > ul > .current-menu-item > a:after,
     #site-menu .nav-menu > ul > .current-menu-parent > a:after {
         bottom: 6px;
-        background-color: #F68338;
+        background-color: red;
     }
 
     .nav-menu .menu-item-has-children ul {
@@ -2161,7 +2161,7 @@ input[type="submit"] {
     .nav-menu .menu-item-has-children li a:hover {
         display: block;
         margin: 0;
-        color: #F68338;
+        color: red;
     }
 
     .nav-menu .menu-item-has-children li .menu-expand {
@@ -2422,13 +2422,13 @@ input[type="submit"] {
 }
 
 .expanded-hero .social-menu a:hover {
-    background-color: #F68338;
+    background-color: red;
     color: #fff;
 }
 
 @media (min-width: 992px) {
     .social-menu a {
-        background-color: #F68338;
+        background-color: red;
     }
 
     .fullpage .social-menu a {
@@ -2438,7 +2438,7 @@ input[type="submit"] {
 
 @media (min-width: 1200px) {
     .social-menu a {
-        background-color: #F68338;
+        background-color: red;
     }
 }
 
@@ -2498,7 +2498,7 @@ input[type="submit"] {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
-    color: #F68338;
+    color: red;
     font-weight: 400;
     letter-spacing: 5px;
 }
@@ -2669,7 +2669,7 @@ input[type="submit"] {
     font-family: 'Rambla', sans-serif;
     padding: 0;
 
-    color: #F68338;
+    color: red;
 }
 
 .fullpage .my-info {
@@ -3099,7 +3099,7 @@ input[type="submit"] {
 
 .my-info .box .field .dropdown ul .selected a {
     font-weight: 500;
-    background-color: #F68338;
+    background-color: red;
 }
 
 .my-info .box button {
@@ -3112,7 +3112,7 @@ input[type="submit"] {
     font-size: 15px;
     font-weight: 400;
     font-family: 'Oswald', sans-serif;
-    background: #F68338;
+    background: red;
     letter-spacing: 2px;
     color: #fff;
 }
@@ -3300,7 +3300,7 @@ input[type="submit"] {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
-    color: #F68338;
+    color: red;
     font-weight: 400;
     letter-spacing: 5px;
 }
@@ -3375,7 +3375,7 @@ input[type="submit"] {
     content: '—';
     display: inline-block;
     margin: 0 .6rem 0 .4rem;
-    color: #F68338;
+    color: red;
 }
 
 .header .meta-data > span:first-child:before {
@@ -3396,7 +3396,7 @@ input[type="submit"] {
 }
 
 .header .meta-data a:hover {
-    color: #F68338;
+    color: red;
 }
 
 .header .meta-date {
@@ -3588,7 +3588,7 @@ input[type="submit"] {
 }
 
 .ul1 > li a:hover {
-    color: #F68338;
+    color: red;
     text-decoration: none;
 }
 
@@ -3624,7 +3624,7 @@ input[type="submit"] {
 }
 
 .latest a:hover .txt1 {
-    color: #F68338;
+    color: red;
 }
 
 /* Tags, Keywords */
@@ -3662,9 +3662,9 @@ input[type="submit"] {
 }
 
 .tags li a:hover {
-    background: #F68338;
+    background: red;
     color: #fff;
-    border-color: #F68338;
+    border-color: red;
 }
 
 
@@ -3779,7 +3779,7 @@ input[type="submit"] {
 
 .feature-left span {
     width: 45px;
-    color: #F68338;
+    color: red;
 }
 
 .font-30px {
@@ -3827,8 +3827,8 @@ input[type="submit"] {
 }
 
 .timeline > li:hover .timeline-content:before {
-    background-color: #F68338;
-    border: 1px solid #F68338;
+    background-color: red;
+    border: 1px solid red;
 }
 
 .timeline > li .timeline-content {

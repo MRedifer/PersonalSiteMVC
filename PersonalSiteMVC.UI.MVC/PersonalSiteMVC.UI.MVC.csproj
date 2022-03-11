@@ -208,9 +208,15 @@
     <Content Include="Content\images\classmates\Payton VanHolten.jfif" />
     <Content Include="Content\images\classmates\Romeo Bagunu.jfif" />
     <Content Include="Content\images\classmates\Sean Mckinney.jfif" />
-    <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\extra\Comicon crowd.jpg" />
+    <Content Include="Content\images\extra\Gohan.jpg" />
+    <Content Include="Content\images\extra\KCFW.jpg" />
+    <Content Include="Content\images\extra\PC.jpg" />
     <Content Include="Content\images\CuffGrayscale.jpg" />
     <Content Include="Content\images\classmates\Zakary Sisler.jfif" />
+    <Content Include="Content\images\favicon-32x32.png" />
+    <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\Headshot.png" />
     <Content Include="Content\images\portfolio\Brandedthumbnail.png" />
     <Content Include="Content\images\portfolio\KCFGC thumbnail.png" />
     <Content Include="Content\OriginalContent\bootstrap-theme.css" />
@@ -278,6 +284,7 @@
     <Content Include="Content\assets\fonts\themify.eot" />
     <Content Include="Content\assets\fonts\themify.ttf" />
     <Content Include="Content\assets\fonts\themify.woff" />
+    <Content Include="Content\Resume.docx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

@@ -25,7 +25,7 @@
             <div class="divider1"></div>
             <div class="row">
                 <div class="col-md-8">
-                    <h6 class="title-small"><strong>Contact</strong></h6>
+                    <h3 class="title-small"><strong>Contact</strong></h3>
 
 
                     @using (Html.BeginForm())
@@ -76,14 +76,14 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-
-    <script>
+<script>
     $(function () {
         $('nav li').filter(function () {
             return this.href === location.href;
         }).addClass('current-menu-item');
     });
-    </script>
+</script>
+    
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }

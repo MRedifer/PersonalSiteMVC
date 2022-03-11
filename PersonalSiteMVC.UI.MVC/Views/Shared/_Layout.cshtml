@@ -4,7 +4,7 @@
     <title>Redifer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="~/Content/images/favicon.png">
+    <link rel="shortcut icon" href="~/Content/images/favicon-32x32.png">
     <link rel="stylesheet" href="~/Content/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/Content/assets/css/et-lineicons.css">
     <link rel="stylesheet" href="~/Content/assets/css/themify-icons.css">
@@ -36,7 +36,6 @@
         <a href="about.html#site-menu" class="ti"> <span class="screen-reader-text">Toggle navigation</span> </a>
     </div>
     <!-- Social Media -->
-
     <!-- Media -->
     <div class="hero-media">
         <div class="owl-carousel" data-expand-duration="800">
@@ -48,19 +47,17 @@
     <!-- Hidden Menu -->
     <div class="additional-menu-content">
         <h3 class="title-small">More than just a web dev</h3>
-        <h2 class="title">Michael Redifer</h2> <img src="/Content/images/Headshot.png" alt="">
+        <h2 class="title">Michael Redifer</h2> <img src="~/Content/images/Headshot.png" alt="">
         <p>Hi, My name is Michael Redifer. I am a Full Stack Web Developer, but I have many other hobbies and things that interest me. Can't be all business all the time. Here are a few of the other things I enjoy.</p> <a href="#" class="btn">Hire Me</a>
         <div class="divider2"></div>
         <h3 class="title-small"></h3>
-        <h2 class="title">Instagram</h2>
+        <h2 class="title">Hobbies</h2>
         <div class="sb-widget fl-wrap">
             <div class="insta-thumb">
-                <a href="#"><img src="~/Content/images/insta/01.jpg" alt=""></a>
-                <a href="#"><img src="~/Content/images/insta/02.jpg" alt=""></a>
-                <a href="#"><img src="~/Content/images/insta/03.jpg" alt=""></a>
-                <a href="#"><img src="~/Content/images/insta/04.jpg" alt=""></a>
-                <a href="#"><img src="~/Content/images/insta/05.jpg" alt=""></a>
-                <a href="#"><img src="~/Content/images/insta/06.jpg" alt=""></a>
+                <a href="#"><img src="~/Content/images/extra/Comicon crowd.jpg" alt=""></a>
+                <a href="#"><img src="~/Content/images/extra/PC.jpg" alt=""></a>
+                <a href="#"><img src="~/Content/images/extra/Gohan.jpg" alt=""></a>
+                <a href="#"><img src="~/Content/images/extra/KCFW.jpg" alt=""></a>
             </div>
         </div>
     </div>
@@ -80,7 +77,11 @@
                 <p>+1 (913) 905-9232</p>
             </div>
             <div class="clear"></div>
-            <button type="submit" class="button-color"><span class="ti-download"></span> DOWNLOAD RESUME</button>
+            <div class="field field-my-info field-separator">
+                <h6>Download</h6>
+                <a href="~/Content/Resume.docx" type="submit" class="button-color" <span class="ti-download"></span> DOWNLOAD RESUME </a>
+                @*<button type="submit" class="button-color"><span href="~/Content/Resume.docx" class="ti-download"></span> DOWNLOAD RESUME</button>*@
+            </div>
         </div>
     </div>
     <!-- Js -->
@@ -88,6 +89,7 @@
     <script src="~/Content/assets/js/modernizr-custom.js"></script>
     <script src="~/Content/assets/js/owl-carousel.min.js"></script>
     <script src="~/Content/assets/js/functions.js"></script>
+    
     @RenderSection("scripts", required: false)
 </body>
 </html>
