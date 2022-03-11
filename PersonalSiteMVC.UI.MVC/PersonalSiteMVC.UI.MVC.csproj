@@ -284,7 +284,7 @@
     <Content Include="Content\assets\fonts\themify.eot" />
     <Content Include="Content\assets\fonts\themify.ttf" />
     <Content Include="Content\assets\fonts\themify.woff" />
-    <Content Include="Content\Resume.docx" />
+    <Content Include="Content\Resume.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
