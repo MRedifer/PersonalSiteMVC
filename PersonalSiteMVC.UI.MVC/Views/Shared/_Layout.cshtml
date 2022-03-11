@@ -89,7 +89,20 @@
     <script src="~/Content/assets/js/modernizr-custom.js"></script>
     <script src="~/Content/assets/js/owl-carousel.min.js"></script>
     <script src="~/Content/assets/js/functions.js"></script>
-    
+    <script>
+        //Close but not quite
+        //$(function () {
+        //    $('nav ul li').filter(function () {
+        //        return this.href === location.href;
+        //    }).addClass('current-menu-item');
+        //});
+        $('nav ul li').each(function () {
+            if ($(this).find('a').attr('href') == window.location.pathname) {
+                $(this).addClass('current-menu-item');
+            }
+        });
+    </script>
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

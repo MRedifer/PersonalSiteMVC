@@ -76,13 +76,7 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-<script>
-    $(function () {
-        $('nav li').filter(function () {
-            return this.href === location.href;
-        }).addClass('current-menu-item');
-    });
-</script>
+
     
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
