@@ -217,8 +217,13 @@
     <Content Include="Content\images\favicon-32x32.png" />
     <Content Include="Content\images\favicon.png" />
     <Content Include="Content\images\Headshot.png" />
+    <Content Include="Content\images\logored.png" />
     <Content Include="Content\images\portfolio\Brandedthumbnail.png" />
     <Content Include="Content\images\portfolio\KCFGC thumbnail.png" />
+    <Content Include="Content\images\portfolio\burnthemeterthumb.png" />
+    <Content Include="Content\images\portfolio\sat.png" />
+    <Content Include="Content\images\portfolio\todothumbnail.png" />
+    <Content Include="Content\images\portfolio\widowigofromhere.png" />
     <Content Include="Content\OriginalContent\bootstrap-theme.css" />
     <Content Include="Content\OriginalContent\bootstrap-theme.min.css" />
     <Content Include="Content\OriginalContent\bootstrap.css" />
